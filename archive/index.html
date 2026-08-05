@@ -5,20 +5,29 @@
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:linear-gradient(160deg,#f0f5ff 0%,#fff 40%,#eef4ff 100%);min-height:100vh;padding:40px 20px}
   .container{max-width:720px;margin:0 auto}
-  .header{background:linear-gradient(135deg,#1E3A5F 0%,#2563EB 60%,#3B82F6 100%);border-radius:20px;padding:32px 40px;color:#fff;margin-bottom:24px}
-  .header h1{font-size:26px;font-weight:800}
-  .header .sub{font-size:13px;opacity:.8;margin-top:6px}
-  .nav a{color:#fff;text-decoration:none;font-size:13px;opacity:.8}
-  .archive-list{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 12px rgba(30,58,95,.06)}
-  .item{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid #F1F5F9;font-size:14px;color:#1E3A5F}
+  .header{background:linear-gradient(135deg,#1E3A5F 0%,#2563EB 60%,#3B82F6 100%);border-radius:18px;padding:28px 32px;color:#fff;margin-bottom:20px}
+  .header h1{font-size:24px;font-weight:800}
+  .header .sub{font-size:12px;opacity:.8;margin-top:4px}
+  .nav a{color:#fff;text-decoration:none;font-size:12px;opacity:.8}
+  .archive-list{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 6px rgba(30,58,95,.05)}
+  .item{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid #F1F5F9;font-size:13px;color:#1E3A5F}
   .item .t{flex:1}
-  .item .d{color:#94A3B8;font-size:12px;margin:0 10px;white-space:nowrap}
-  .item .reason{color:#94A3B8;font-size:12px;background:#F1F5F9;padding:2px 10px;border-radius:10px;white-space:nowrap}
-  .empty{text-align:center;padding:60px 20px;color:#94A3B8;font-size:15px}
+  .item .d{color:#94A3B8;font-size:11px;margin:0 8px;white-space:nowrap}
+  .item .reason{color:#94A3B8;font-size:11px;background:#F1F5F9;padding:2px 8px;border-radius:8px;white-space:nowrap}
+  .item .restore{color:#2563EB;cursor:pointer;font-size:12px;border:none;background:none}
+  .item .restore:hover{text-decoration:underline}
+  .empty{text-align:center;padding:60px 20px;color:#94A3B8;font-size:14px}
 </style></head><body><div class="container">
-<div class="header"><h1>📚 历史存档</h1><div class="sub">已过期 / 已删除的活动 · 0 条</div></div>
+<div class="header"><h1>📚 历史存档</h1><div class="sub">已过期 / 已删除的活动 · 1 条</div></div>
 <div class="nav"><a href="/">← 返回近期活动</a></div>
 <div class="archive-list">
-<div class="empty">暂无历史记录</div>
+<div class="item"><span class="t">GTIC 2026 中国具身智能机器人大会</span><span class="d">2026-08-05 10:39</span><span class="reason">已删除</span><button class="restore" onclick="restoreActivity('act-15')">恢复</button></div>
 </div>
-</div></body></html>
+</div></body></html><script>
+async function restoreActivity(id) {
+  const resp = await fetch('/api/restore', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({id}) });
+  const result = await resp.json();
+  if (result.ok) { alert('已恢复'); location.reload(); }
+  else { alert('恢复失败'); }
+}
+</script>
