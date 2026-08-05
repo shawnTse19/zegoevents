@@ -87,18 +87,18 @@
   <div class="header">
     <span class="tag">📡 每日监控 · 每日10点更新</span>
     <h1>行业活动资讯速递</h1>
-    <div class="sub">聚焦 AI 硬件 / 泛娱乐社交 / 音视频 / 人工智能 · 2026-08-05 10:08</div>
+    <div class="sub">聚焦 AI 硬件 / 泛娱乐社交 / 音视频 / 人工智能 · 2026-08-05 11:00</div>
     <div class="stats">
-      <div class="stat"><b>22</b><span>近期活动</span></div>
-      <div class="stat"><b>0</b><span>⭐ 已关注</span></div>
+      <div class="stat"><b>25</b><span>近期活动</span></div>
+      <div class="stat"><b>3</b><span>⭐ 已关注</span></div>
       <div class="stat"><b>1</b><span>📦 已归档</span></div>
     </div>
   </div>
 
   <div class="toolbar">
     <span class="label">📍</span>
-    <button class="filter-btn active" data-region="all" onclick="filterRegion('all', this)">全部 <span class="n">(22)</span></button>
-    <button class="filter-btn" data-region="online" onclick="filterRegion('online', this)">💻 线上 <span class="n">(1)</span></button><button class="filter-btn" data-region="overseas" onclick="filterRegion('overseas', this)">🌍 海外 <span class="n">(5)</span></button><button class="filter-btn" data-region="east" onclick="filterRegion('east', this)">🌏 华东 <span class="n">(4)</span></button><button class="filter-btn" data-region="south" onclick="filterRegion('south', this)">🌏 华南 <span class="n">(8)</span></button><button class="filter-btn" data-region="north" onclick="filterRegion('north', this)">🌏 华北 <span class="n">(4)</span></button>
+    <button class="filter-btn active" data-region="all" onclick="filterRegion('all', this)">全部 <span class="n">(25)</span></button>
+    <button class="filter-btn" data-region="online" onclick="filterRegion('online', this)">💻 线上 <span class="n">(1)</span></button><button class="filter-btn" data-region="overseas" onclick="filterRegion('overseas', this)">🌍 海外 <span class="n">(5)</span></button><button class="filter-btn" data-region="east" onclick="filterRegion('east', this)">🌏 华东 <span class="n">(4)</span></button><button class="filter-btn" data-region="south" onclick="filterRegion('south', this)">🌏 华南 <span class="n">(10)</span></button><button class="filter-btn" data-region="north" onclick="filterRegion('north', this)">🌏 华北 <span class="n">(5)</span></button>
     <span style="flex:1"></span>
     <button class="filter-btn" id="btn-starred" onclick="toggleStarred()">⭐ 只看关注</button>
   </div>
@@ -112,9 +112,51 @@
   <div class="month-header" onclick="toggleMonth(this)">
     <span class="m-arrow open">▶</span>
     <span class="m-name">8月</span>
-    <span class="m-count">10</span>
+    <span class="m-count">12</span>
   </div>
-  <div class="month-items"><div class="card" data-region="north">
+  <div class="month-items"><div class="card starred" data-region="east">
+  <div class="body">
+    <h3>全球AI出海大会</h3>
+    <div class="meta"><span>📅 8月27日 13:30</span><span>📍 浙江杭州武林洲际酒店5F武林厅</span><span>🌏 华东</span><span>🏢 白鲸出海</span></div>
+    <div class="desc">全球AI出海大会，聚焦AI技术与出海业务融合，覆盖AI大模型、应用出海增长等议题。</div>
+    <div class="src">来源：网站直抓 · 白鲸出海</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn active" onclick="toggleStar('act-16')" title="取消关注">⭐</button>
+    <button class="del-btn" onclick="deleteActivity('act-16', '全球AI出海大会')" title="删除">×</button>
+    <a class="ext-link" href="https://www.baijing.cn/activity/2338" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card starred" data-region="south">
+  <div class="body">
+    <h3>2026 · 深圳 · 物理 AI 峰会</h3>
+    <div class="meta"><span>📅 8月28日 09:00</span><span>📍 广东深圳</span><span>🌏 华南</span><span>🏢 非凡大赏</span></div>
+    <div class="desc">聚焦物理 AI（机器人/具身智能），行业前沿峰会。</div>
+    <div class="src">来源：网站直抓 · 活动行</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn active" onclick="toggleStar('act-3')" title="取消关注">⭐</button>
+    <button class="del-btn" onclick="deleteActivity('act-3', '2026 · 深圳 · 物理 AI 峰会')" title="删除">×</button>
+    <a class="ext-link" href="https://www.huodongxing.com/event/1871787088100" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="north">
+  <div class="body">
+    <h3>第六届数智化转型升级发展论坛——暨 Agent &amp; AI 出海趋势论坛<span class="countdown urgent">今天</span></h3>
+    <div class="meta"><span>📅 8月5日 13:30</span><span>📍 北京海淀 · 中关村国家自主创新示范区</span><span>🌏 华北</span><span>🏢 数据猿 × 数智猿</span></div>
+    <div class="desc">以深潜远航为主题，聚焦 Agent 引领数智化转型与 AI 出海趋势。</div>
+    <div class="src">来源：搜索补充</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-24')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-24', '第六届数智化转型升级发展论坛——暨 Agent &amp; AI 出海趋势论坛')" title="删除">×</button>
+    <a class="ext-link" href="https://www.huodongxing.com/event/1865861442400" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="north">
   <div class="body">
     <h3>AI增长局：建立AI产品的新护城河<span class="countdown soon">明天</span></h3>
     <div class="meta"><span>📅 8月6日 14:30</span><span>📍 北京（报名后查看地址）</span><span>🌏 华北</span><span>🏢 扬帆出海</span></div>
@@ -153,6 +195,20 @@
     <button class="star-btn" onclick="toggleStar('act-18')" title="关注">☆</button>
     <button class="del-btn" onclick="deleteActivity('act-18', 'AI Apps Link·新兴市场出海Night')" title="删除">×</button>
     <a class="ext-link" href="https://www.baijing.cn/activity/2356" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="south">
+  <div class="body">
+    <h3>跨境电商闭门私享会：AI硬件×出海营销×品牌创新路径<span class="countdown normal">还有 8 天</span></h3>
+    <div class="meta"><span>📅 8月13日 14:00</span><span>📍 深圳南山</span><span>🌏 华南</span><span>🏢 白鲸出海 × AhaCreator × Trooly AI</span></div>
+    <div class="desc">AI 硬件出海专题私享会，深度探讨 AI 硬件出海营销与品牌创新路径。</div>
+    <div class="src">来源：网站直抓 · 活动行</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-26')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-26', '跨境电商闭门私享会：AI硬件×出海营销×品牌创新路径')" title="删除">×</button>
+    <a class="ext-link" href="https://www.huodongxing.com/event/6868840575000" target="_blank">报名 →</a>
   </div>
 </div>
 
@@ -225,42 +281,14 @@
     <a class="ext-link" href="https://www.baijing.cn/activity/2329" target="_blank">报名 →</a>
   </div>
 </div>
-
-<div class="card" data-region="east">
-  <div class="body">
-    <h3>全球AI出海大会</h3>
-    <div class="meta"><span>📅 8月27日 13:30</span><span>📍 浙江杭州武林洲际酒店5F武林厅</span><span>🌏 华东</span><span>🏢 白鲸出海</span></div>
-    <div class="desc">全球AI出海大会，聚焦AI技术与出海业务融合，覆盖AI大模型、应用出海增长等议题。</div>
-    <div class="src">来源：网站直抓 · 白鲸出海</div>
-  </div>
-  <div class="card-actions">
-    <button class="star-btn" onclick="toggleStar('act-16')" title="关注">☆</button>
-    <button class="del-btn" onclick="deleteActivity('act-16', '全球AI出海大会')" title="删除">×</button>
-    <a class="ext-link" href="https://www.baijing.cn/activity/2338" target="_blank">报名 →</a>
-  </div>
-</div>
-
-<div class="card" data-region="south">
-  <div class="body">
-    <h3>2026 · 深圳 · 物理 AI 峰会</h3>
-    <div class="meta"><span>📅 8月28日 09:00</span><span>📍 广东深圳</span><span>🌏 华南</span><span>🏢 非凡大赏</span></div>
-    <div class="desc">聚焦物理 AI（机器人/具身智能），行业前沿峰会。</div>
-    <div class="src">来源：网站直抓 · 活动行</div>
-  </div>
-  <div class="card-actions">
-    <button class="star-btn" onclick="toggleStar('act-3')" title="关注">☆</button>
-    <button class="del-btn" onclick="deleteActivity('act-3', '2026 · 深圳 · 物理 AI 峰会')" title="删除">×</button>
-    <a class="ext-link" href="https://www.huodongxing.com/event/1871787088100" target="_blank">报名 →</a>
-  </div>
-</div>
 </div>
 </div><div class="month-group">
   <div class="month-header" onclick="toggleMonth(this)">
     <span class="m-arrow">▶</span>
     <span class="m-name">9月</span>
-    <span class="m-count">9</span>
+    <span class="m-count">10</span>
   </div>
-  <div class="month-items collapsed"><div class="card" data-region="south">
+  <div class="month-items collapsed"><div class="card starred" data-region="south">
   <div class="body">
     <h3>智驱AI，探索应用与游戏出海增长新解法</h3>
     <div class="meta"><span>📅 9月2日 14:00</span><span>📍 广东深圳南山区</span><span>🌏 华南</span><span>🏢 白鲸出海</span></div>
@@ -268,9 +296,23 @@
     <div class="src">来源：网站直抓 · 白鲸出海</div>
   </div>
   <div class="card-actions">
-    <button class="star-btn" onclick="toggleStar('act-17')" title="关注">☆</button>
+    <button class="star-btn active" onclick="toggleStar('act-17')" title="取消关注">⭐</button>
     <button class="del-btn" onclick="deleteActivity('act-17', '智驱AI，探索应用与游戏出海增长新解法')" title="删除">×</button>
     <a class="ext-link" href="https://www.baijing.cn/activity/2352" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="south">
+  <div class="body">
+    <h3>第三届AI赋能消费电子创新论坛</h3>
+    <div class="meta"><span>📅 9月8日</span><span>📍 深圳国际会展中心（宝安）</span><span>🌏 华南</span><span>🏢 华强电子网</span></div>
+    <div class="desc">CIOE 同期论坛，聚焦端侧 AI 芯片与消费电子结合，探讨 AI 赋能消费电子创新路径。</div>
+    <div class="src">来源：网站直抓 · 活动行</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-25')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-25', '第三届AI赋能消费电子创新论坛')" title="删除">×</button>
+    <a class="ext-link" href="https://www.huodongxing.com/event/7869985442200" target="_blank">报名 →</a>
   </div>
 </div>
 
