@@ -32,7 +32,7 @@
   .section-title .dot.high{background:#2563EB}
   .section-title .dot.mid{background:#00BFA5}
   .section-title .count{font-size:12px;background:#EFF6FF;color:#2563EB;padding:2px 10px;border-radius:12px;font-weight:600}
-  .card{background:#fff;border-radius:14px;padding:22px 26px;margin-bottom:14px;box-shadow:0 2px 12px rgba(30,58,95,.06);border:1px solid rgba(30,58,95,.06);transition:transform .15s,box-shadow .15s;display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+  .card{background:#fff;border-radius:14px;padding:22px 26px;margin-bottom:14px;box-shadow:0 2px 12px rgba(30,58,95,.06);border:1px solid rgba(30,58,95,.06);transition:transform .15s,box-shadow .15s;display:flex;justify-content:space-between;gap:20px;align-items:flex-start;position:relative}
   .card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(30,58,95,.1)}
   .card.high{border-left:4px solid #2563EB}
   .card.mid{border-left:4px solid #00BFA5}
@@ -45,6 +45,8 @@
   .card .link:hover{background:#1D4ED8}
   .card .link.mid{background:#00BFA5}
   .card .link.mid:hover{background:#00A896}
+  .card .del-btn{position:absolute;top:14px;right:14px;width:26px;height:26px;border-radius:50%;border:1px solid #E2E8F0;background:#fff;color:#CBD5E1;font-size:14px;line-height:24px;text-align:center;cursor:pointer;transition:all .15s}
+  .card .del-btn:hover{background:#FEE2E2;border-color:#FCA5A5;color:#EF4444}
   .footer{text-align:center;font-size:12px;color:#94A3B8;margin-top:24px;letter-spacing:1px;line-height:2}
   .empty{text-align:center;padding:60px 20px;color:#94A3B8;font-size:15px}
   .archive-list{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 12px rgba(30,58,95,.06)}
@@ -80,6 +82,7 @@
   </div>
 
   <div class="section"><div class="section-title"><span class="dot high"></span> 高相关 <span class="count">17</span></div><div class="card high" data-region="north">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>AI增长局：建立AI产品的新护城河</h3>
     <div class="meta"><span>📅 8月6日 14:30</span><span>📍 北京（报名后查看地址）</span><span>🌏 华北</span><span>🏢 扬帆出海</span></div>
@@ -90,6 +93,7 @@
 </div>
 
 <div class="card high" data-region="north">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>2026 世界机器人大会（WRC）</h3>
     <div class="meta"><span>📅 8月19-23日</span><span>📍 北京北人亦创国际会展中心</span><span>🌏 华北</span><span>🏢 中国电子学会等</span></div>
@@ -100,6 +104,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>AICon 全球人工智能开发与应用大会·深圳站</h3>
     <div class="meta"><span>📅 8月21-22日</span><span>📍 深圳湾万丽酒店</span><span>🌏 华南</span><span>🏢 InfoQ / 极客邦</span></div>
@@ -110,6 +115,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>AGIC 2026 深圳人工智能展</h3>
     <div class="meta"><span>📅 8月26-28日</span><span>📍 深圳国际会展中心（宝安）</span><span>🌏 华南</span><span>🏢 世界人工智能与物联网创新联盟（WAIA）</span></div>
@@ -120,6 +126,7 @@
 </div>
 
 <div class="card high" data-region="east">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>从 Demo 到 Revenue：AI Agent GTM 全球实战峰会</h3>
     <div class="meta"><span>📅 8月26日</span><span>📍 浙江省杭州市</span><span>🌏 华东</span><span>🏢 扬帆出海</span></div>
@@ -130,6 +137,7 @@
 </div>
 
 <div class="card high" data-region="east">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>全球AI出海大会</h3>
     <div class="meta"><span>📅 8月27日 13:30</span><span>📍 浙江杭州武林洲际酒店5F武林厅</span><span>🌏 华东</span><span>🏢 白鲸出海</span></div>
@@ -140,6 +148,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>2026 · 深圳 · 物理 AI 峰会</h3>
     <div class="meta"><span>📅 8月28日 09:00</span><span>📍 广东深圳</span><span>🌏 华南</span><span>🏢 非凡大赏</span></div>
@@ -150,6 +159,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>智驱AI，探索应用与游戏出海增长新解法</h3>
     <div class="meta"><span>📅 9月2日 14:00</span><span>📍 广东深圳南山区</span><span>🌏 华南</span><span>🏢 白鲸出海</span></div>
@@ -160,6 +170,7 @@
 </div>
 
 <div class="card high" data-region="overseas">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>Global Connect Singapore 2026</h3>
     <div class="meta"><span>📅 9月17-18日</span><span>📍 新加坡滨海湾金沙会展中心</span><span>🌍 海外</span><span>🏢 白鲸出海</span></div>
@@ -170,6 +181,7 @@
 </div>
 
 <div class="card high" data-region="overseas">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>Applied AI Summit（新加坡）</h3>
     <div class="meta"><span>📅 9月17日 13:30</span><span>📍 新加坡滨海湾金沙会展中心 4F Peony Ballroom</span><span>🌍 海外</span><span>🏢 白鲸出海</span></div>
@@ -180,6 +192,7 @@
 </div>
 
 <div class="card high" data-region="east">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>GTIC 2026 全球 AI 芯片峰会</h3>
     <div class="meta"><span>📅 9月22日</span><span>📍 上海</span><span>🌏 华东</span><span>🏢 智东西</span></div>
@@ -190,6 +203,7 @@
 </div>
 
 <div class="card high" data-region="east">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>Stripe Tour 上海 · 年度旗舰盛会</h3>
     <div class="meta"><span>📅 9月23日</span><span>📍 上海市</span><span>🌏 华东</span><span>🏢 Stripe</span></div>
@@ -200,6 +214,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>【硬核出海.资本同航】AIZQ2026 AI硬件出海生态投融资大会</h3>
     <div class="meta"><span>📅 9月23日 09:00</span><span>📍 广东深圳</span><span>🌏 华南</span><span>🏢 AIZQ知穹传媒</span></div>
@@ -210,6 +225,7 @@
 </div>
 
 <div class="card high" data-region="north">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>DACon 2026 · 北京站</h3>
     <div class="meta"><span>📅 10月23-24日</span><span>📍 北京希尔顿逸林酒店</span><span>🌏 华北</span><span>🏢 扬帆出海</span></div>
@@ -220,6 +236,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>2026 深圳国际 AI+AR 智能眼镜产业展</h3>
     <div class="meta"><span>📅 10月27-29日</span><span>📍 深圳国际会展中心</span><span>🌏 华南</span><span>🏢 励展博览</span></div>
@@ -230,6 +247,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>2026 全球智能眼镜产业峰会</h3>
     <div class="meta"><span>📅 10月28日</span><span>📍 深圳国际会展中心16号馆</span><span>🌏 华南</span><span>🏢 87870</span></div>
@@ -240,6 +258,7 @@
 </div>
 
 <div class="card high" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>GTIC 2026 中国具身智能机器人大会</h3>
     <div class="meta"><span>📅 11月</span><span>📍 深圳</span><span>🌏 华南</span><span>🏢 智东西</span></div>
@@ -250,6 +269,7 @@
 </div>
 </div>
   <div class="section"><div class="section-title"><span class="dot mid"></span> 中相关 <span class="count">6</span></div><div class="card mid" data-region="online">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>Stripe Online：AI、全球支付与亚太机遇</h3>
     <div class="meta"><span>📅 8月12日</span><span>📍 线上</span><span>💻 线上活动</span><span>🏢 白鲸出海 × Stripe</span></div>
@@ -260,6 +280,7 @@
 </div>
 
 <div class="card mid" data-region="north">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>AI Apps Link·新兴市场出海Night</h3>
     <div class="meta"><span>📅 8月13日 17:00</span><span>📍 北京东城区</span><span>🌏 华北</span><span>🏢 白鲸出海</span></div>
@@ -270,6 +291,7 @@
 </div>
 
 <div class="card mid" data-region="south">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>星光城市计划 游戏沙龙专场·长沙站</h3>
     <div class="meta"><span>📅 8月26日 14:00</span><span>📍 湖南长沙</span><span>🌏 华南</span><span>🏢 白鲸出海</span></div>
@@ -280,6 +302,7 @@
 </div>
 
 <div class="card mid" data-region="overseas">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>Global Growth Summit（新加坡）</h3>
     <div class="meta"><span>📅 9月17日 09:00</span><span>📍 新加坡滨海湾金沙会展中心 4F Peony Ballroom</span><span>🌍 海外</span><span>🏢 白鲸出海</span></div>
@@ -290,6 +313,7 @@
 </div>
 
 <div class="card mid" data-region="overseas">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>AI Software Globalisation Summit &amp; Startup Showcase（新加坡）</h3>
     <div class="meta"><span>📅 9月18日 13:30</span><span>📍 新加坡滨海湾金沙会展中心 4F Peony Ballroom</span><span>🌍 海外</span><span>🏢 白鲸出海</span></div>
@@ -300,6 +324,7 @@
 </div>
 
 <div class="card mid" data-region="overseas">
+  <button class="del-btn" onclick="this.closest('.card').remove()" title="隐藏">×</button>
   <div class="info">
     <h3>AI Technology Development Summit（新加坡）</h3>
     <div class="meta"><span>📅 9月18日 09:00</span><span>📍 新加坡滨海湾金沙会展中心 4F Peony Ballroom</span><span>🌍 海外</span><span>🏢 白鲸出海</span></div>
