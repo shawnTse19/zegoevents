@@ -87,9 +87,9 @@
   <div class="header">
     <span class="tag">📡 每日监控 · 每日10点更新</span>
     <h1>行业活动资讯速递</h1>
-    <div class="sub">聚焦 AI 硬件 / 泛娱乐社交 / 音视频 / 人工智能 · 2026-08-06 10:00</div>
+    <div class="sub">聚焦 AI 硬件 / 泛娱乐社交 / 音视频 / 人工智能 · 2026-08-07 10:00</div>
     <div class="stats">
-      <div class="stat"><b>29</b><span>近期活动</span></div>
+      <div class="stat"><b>35</b><span>近期活动</span></div>
       <div class="stat"><b>4</b><span>⭐ 已关注</span></div>
       <div class="stat"><b>2</b><span>📦 已归档</span></div>
     </div>
@@ -97,8 +97,8 @@
 
   <div class="toolbar">
     <span class="label">📍</span>
-    <button class="filter-btn active" data-region="all" onclick="filterRegion('all', this)">全部 <span class="n">(29)</span></button>
-    <button class="filter-btn" data-region="online" onclick="filterRegion('online', this)">💻 线上 <span class="n">(1)</span></button><button class="filter-btn" data-region="overseas" onclick="filterRegion('overseas', this)">🌍 海外 <span class="n">(5)</span></button><button class="filter-btn" data-region="east" onclick="filterRegion('east', this)">🌏 华东 <span class="n">(7)</span></button><button class="filter-btn" data-region="south" onclick="filterRegion('south', this)">🌏 华南 <span class="n">(10)</span></button><button class="filter-btn" data-region="north" onclick="filterRegion('north', this)">🌏 华北 <span class="n">(6)</span></button>
+    <button class="filter-btn active" data-region="all" onclick="filterRegion('all', this)">全部 <span class="n">(35)</span></button>
+    <button class="filter-btn" data-region="online" onclick="filterRegion('online', this)">💻 线上 <span class="n">(1)</span></button><button class="filter-btn" data-region="overseas" onclick="filterRegion('overseas', this)">🌍 海外 <span class="n">(6)</span></button><button class="filter-btn" data-region="east" onclick="filterRegion('east', this)">🌏 华东 <span class="n">(8)</span></button><button class="filter-btn" data-region="south" onclick="filterRegion('south', this)">🌏 华南 <span class="n">(12)</span></button><button class="filter-btn" data-region="north" onclick="filterRegion('north', this)">🌏 华北 <span class="n">(8)</span></button>
     <span style="flex:1"></span>
     <button class="filter-btn" id="btn-starred" onclick="toggleStarred()">⭐ 只看关注</button>
   </div>
@@ -112,7 +112,7 @@
   <div class="month-header" onclick="toggleMonth(this)">
     <span class="m-arrow open">▶</span>
     <span class="m-name">8月</span>
-    <span class="m-count">14</span>
+    <span class="m-count">16</span>
   </div>
   <div class="month-items"><div class="card starred" data-region="east">
   <div class="body">
@@ -142,9 +142,9 @@
   </div>
 </div>
 
-<div class="card" data-region="north">
+<div class="card expired" data-region="north">
   <div class="body">
-    <h3>AI增长局：建立AI产品的新护城河<span class="countdown urgent">今天</span></h3>
+    <h3>AI增长局：建立AI产品的新护城河<span class="countdown">已结束</span></h3>
     <div class="meta"><span>📅 8月6日 14:30</span><span>📍 北京（报名后查看地址）</span><span>🌏 华北</span><span>🏢 扬帆出海</span></div>
     <div class="desc">AI 产品增长主题闭门局，聚焦 AI 产品护城河建设，北京场。</div>
     <div class="src">来源：网站直抓 · 扬帆出海</div>
@@ -152,13 +152,27 @@
   <div class="card-actions">
     <button class="star-btn" onclick="toggleStar('act-13')" title="关注">☆</button>
     <button class="del-btn" onclick="deleteActivity('act-13', 'AI增长局：建立AI产品的新护城河')" title="删除">×</button>
-    <a class="ext-link" href="https://www.yfchuhai.com/activity/10222473.html" target="_blank">报名 →</a>
+    <a class="ext-link exp" href="https://www.yfchuhai.com/activity/10222473.html" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="north">
+  <div class="body">
+    <h3>AI大模型赋能机器人与具身智能产业新范式交流活动（WRC预热）<span class="countdown soon">明天</span></h3>
+    <div class="meta"><span>📅 8月8日 13:00-18:00</span><span>📍 北京经济技术开发区</span><span>🌏 华北</span><span>🏢 世界机器人大会组委会</span></div>
+    <div class="desc">WRC 2026 前期预热活动，聚焦AI大模型赋能机器人及具身智能产业新范式。</div>
+    <div class="src">来源：搜索补充 · 世界机器人大会</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-26f6be4f')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-26f6be4f', 'AI大模型赋能机器人与具身智能产业新范式交流活动（WRC预热）')" title="删除">×</button>
+    <a class="ext-link" href="https://www.worldrobotconference.com/symposium" target="_blank">报名 →</a>
   </div>
 </div>
 
 <div class="card" data-region="east">
   <div class="body">
-    <h3>2026第四届上海具身智能机器人产业大会暨展览会<span class="countdown soon">还有 6 天</span></h3>
+    <h3>2026第四届上海具身智能机器人产业大会暨展览会<span class="countdown soon">还有 5 天</span></h3>
     <div class="meta"><span>📅 8月12-14日</span><span>📍 上海新国际博览中心</span><span>🌏 华东</span><span>🏢 英佛会议展览 × 电动车千人会</span></div>
     <div class="desc">大会+展览+活动一站式价值对接平台，覆盖核心零部件、服务/特种机器人、具身智能全产业链。</div>
     <div class="src">来源：搜索补充</div>
@@ -172,7 +186,7 @@
 
 <div class="card" data-region="online">
   <div class="body">
-    <h3>Stripe Online：AI、全球支付与亚太机遇<span class="countdown soon">还有 6 天</span></h3>
+    <h3>Stripe Online：AI、全球支付与亚太机遇<span class="countdown soon">还有 5 天</span></h3>
     <div class="meta"><span>📅 8月12日</span><span>📍 线上</span><span>💻 线上</span><span>🏢 白鲸出海 × Stripe</span></div>
     <div class="desc">AI + 全球支付与亚太市场增长机会，Google/Anthropic 等分享。</div>
     <div class="src">来源：搜索补充</div>
@@ -186,7 +200,7 @@
 
 <div class="card" data-region="north">
   <div class="body">
-    <h3>AI Apps Link·新兴市场出海Night<span class="countdown soon">还有 7 天</span></h3>
+    <h3>AI Apps Link·新兴市场出海Night<span class="countdown soon">还有 6 天</span></h3>
     <div class="meta"><span>📅 8月13日 17:00</span><span>📍 北京东城区</span><span>🌏 华北</span><span>🏢 白鲸出海</span></div>
     <div class="desc">AI 应用出海新兴市场交流之夜，链接出海生态资源。</div>
     <div class="src">来源：网站直抓 · 白鲸出海</div>
@@ -200,7 +214,7 @@
 
 <div class="card" data-region="south">
   <div class="body">
-    <h3>跨境电商闭门私享会：AI硬件×出海营销×品牌创新路径<span class="countdown soon">还有 7 天</span></h3>
+    <h3>跨境电商闭门私享会：AI硬件×出海营销×品牌创新路径<span class="countdown soon">还有 6 天</span></h3>
     <div class="meta"><span>📅 8月13日 14:00</span><span>📍 深圳南山</span><span>🌏 华南</span><span>🏢 白鲸出海 × AhaCreator × Trooly AI</span></div>
     <div class="desc">AI 硬件出海专题私享会，深度探讨 AI 硬件出海营销与品牌创新路径。</div>
     <div class="src">来源：网站直抓 · 活动行</div>
@@ -214,7 +228,7 @@
 
 <div class="card" data-region="north">
   <div class="body">
-    <h3>AING ECO | AI硬件创新日·北京站 — 迈入个人智能体时代<span class="countdown normal">还有 12 天</span></h3>
+    <h3>AING ECO | AI硬件创新日·北京站 — 迈入个人智能体时代<span class="countdown normal">还有 11 天</span></h3>
     <div class="meta"><span>📅 8月18日 09:00-18:00</span><span>📍 北京·中关村</span><span>🌏 华北</span><span>🏢 AING ECO</span></div>
     <div class="desc">AI软件能力与实体硬件深度交织，聚焦个人智能体时代的AI硬件创新，软硬结合生态。</div>
     <div class="src">来源：搜索补充 · 活动行</div>
@@ -228,7 +242,7 @@
 
 <div class="card" data-region="north">
   <div class="body">
-    <h3>2026 世界机器人大会（WRC）<span class="countdown normal">还有 13 天</span></h3>
+    <h3>2026 世界机器人大会（WRC）<span class="countdown normal">还有 12 天</span></h3>
     <div class="meta"><span>📅 8月19-23日</span><span>📍 北京北人亦创国际会展中心</span><span>🌏 华北</span><span>🏢 中国电子学会等</span></div>
     <div class="desc">主题&quot;人机共生，产需共融&quot;，近30家国际机构支持，机器人/具身智能领域年度最大盛会。</div>
     <div class="src">来源：搜索补充</div>
@@ -242,7 +256,7 @@
 
 <div class="card" data-region="north">
   <div class="body">
-    <h3>AI 2030 北京峰会<span class="countdown normal">还有 14 天</span></h3>
+    <h3>AI 2030 北京峰会<span class="countdown normal">还有 13 天</span></h3>
     <div class="meta"><span>📅 8月20日</span><span>📍 北京</span><span>🌏 华北</span><span>🏢 AI 2030 倡议组织</span></div>
     <div class="desc">主题「智能体AI、具身智能与负责任AI的交汇」，汇聚全球AI领袖探讨技术落地与责任治理，五大专题论坛。</div>
     <div class="src">来源：搜索补充</div>
@@ -256,7 +270,7 @@
 
 <div class="card" data-region="south">
   <div class="body">
-    <h3>AICon 全球人工智能开发与应用大会·深圳站</h3>
+    <h3>AICon 全球人工智能开发与应用大会·深圳站<span class="countdown normal">还有 14 天</span></h3>
     <div class="meta"><span>📅 8月21-22日</span><span>📍 深圳湾万丽酒店</span><span>🌏 华南</span><span>🏢 InfoQ / 极客邦</span></div>
     <div class="desc">聚焦大模型训练推理、AI Agent、RAG、多模态，资深工程师向技术大会。</div>
     <div class="src">来源：搜索补充</div>
@@ -309,12 +323,26 @@
     <a class="ext-link" href="https://www.baijing.cn/activity/2329" target="_blank">报名 →</a>
   </div>
 </div>
+
+<div class="card" data-region="south">
+  <div class="body">
+    <h3>Snapchat 2026年度旺季出海大会</h3>
+    <div class="meta"><span>📅 8月27日</span><span>📍 广东深圳</span><span>🌏 华南</span><span>🏢 Snapchat × 36氪出海</span></div>
+    <div class="desc">助力中国出海品牌精准把握年终旺季脉搏，联合头部出海品牌、海外创作者机构，聚焦AI时代出海营销增长。</div>
+    <div class="src">来源：搜索补充 · 36氪出海</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-snap36kr')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-snap36kr', 'Snapchat 2026年度旺季出海大会')" title="删除">×</button>
+    <a class="ext-link" href="https://letschuhai.com/4cfe94b1" target="_blank">报名 →</a>
+  </div>
+</div>
 </div>
 </div><div class="month-group">
   <div class="month-header" onclick="toggleMonth(this)">
     <span class="m-arrow">▶</span>
     <span class="m-name">9月</span>
-    <span class="m-count">12</span>
+    <span class="m-count">13</span>
   </div>
   <div class="month-items collapsed"><div class="card starred" data-region="south">
   <div class="body">
@@ -341,6 +369,20 @@
     <button class="star-btn active" onclick="toggleStar('act-usr-1')" title="取消关注">⭐</button>
     <button class="del-btn" onclick="deleteActivity('act-usr-1', '2026 云栖大会')" title="删除">×</button>
     <a class="ext-link" href="https://yunqi.aliyun.com/" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="overseas">
+  <div class="body">
+    <h3>IFA Berlin 2026 国际消费电子展</h3>
+    <div class="meta"><span>📅 9月4-8日</span><span>📍 德国柏林展览中心</span><span>🌍 海外</span><span>🏢 IFA Berlin</span></div>
+    <div class="desc">全球最大消费电子展之一，聚焦机器人、AI、智能家居等创新。WAEA &amp; UWA 联合打造AI视听硬科技路演平台，面向AI眼镜、未来视听及AI硬件创新企业。</div>
+    <div class="src">来源：搜索补充</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-ifa2026')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-ifa2026', 'IFA Berlin 2026 国际消费电子展')" title="删除">×</button>
+    <a class="ext-link" href="https://www.ifa-berlin.com/" target="_blank">报名 →</a>
   </div>
 </div>
 
@@ -529,6 +571,60 @@
     <button class="star-btn" onclick="toggleStar('act-9')" title="关注">☆</button>
     <button class="del-btn" onclick="deleteActivity('act-9', '2026 全球智能眼镜产业峰会')" title="删除">×</button>
     <a class="ext-link" href="https://www.shifair.com/informationDetails/385118.html" target="_blank">报名 →</a>
+  </div>
+</div>
+</div>
+</div><div class="month-group">
+  <div class="month-header" onclick="toggleMonth(this)">
+    <span class="m-arrow">▶</span>
+    <span class="m-name">11月</span>
+    <span class="m-count">1</span>
+  </div>
+  <div class="month-items collapsed"><div class="card" data-region="south">
+  <div class="body">
+    <h3>2026高交会·亚洲人工智能产业链展暨机器人产业链展</h3>
+    <div class="meta"><span>📅 11月26-28日</span><span>📍 深圳国际会展中心（宝安）</span><span>🌏 华南</span><span>🏢 深圳市政府 / 振威国际会展</span></div>
+    <div class="desc">高交会旗下AI+机器人专题展，覆盖AI芯片、算法、智能终端、具身机器人全产业链。</div>
+    <div class="src">来源：搜索补充</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-e6daed95')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-e6daed95', '2026高交会·亚洲人工智能产业链展暨机器人产业链展')" title="删除">×</button>
+    <a class="ext-link" href="https://www.emaiexpo.com/" target="_blank">报名 →</a>
+  </div>
+</div>
+</div>
+</div><div class="month-group">
+  <div class="month-header" onclick="toggleMonth(this)">
+    <span class="m-arrow">▶</span>
+    <span class="m-name">12月</span>
+    <span class="m-count">2</span>
+  </div>
+  <div class="month-items collapsed"><div class="card" data-region="north">
+  <div class="body">
+    <h3>AICon 人工智能与大模型应用大会（北京站）2026</h3>
+    <div class="meta"><span>📅 12月18-19日</span><span>📍 北京朝阳区</span><span>🌏 华北</span><span>🏢 InfoQ / 极客邦科技</span></div>
+    <div class="desc">聚焦大模型推理优化、端侧智能、AI基础设施与生态构建，面向资深工程师的技术盛会。</div>
+    <div class="src">来源：搜索补充 · 百格活动</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-ee570d5f')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-ee570d5f', 'AICon 人工智能与大模型应用大会（北京站）2026')" title="删除">×</button>
+    <a class="ext-link" href="https://www.bagevent.com/event/9131944" target="_blank">报名 →</a>
+  </div>
+</div>
+
+<div class="card" data-region="east">
+  <div class="body">
+    <h3>Agentic AI Summit 超级智能体系统架构峰会·上海站</h3>
+    <div class="meta"><span>📅 12月18日</span><span>📍 上海黄浦区</span><span>🌏 华东</span><span>🏢 百格活动</span></div>
+    <div class="desc">聚焦超级智能体系统架构，探讨AI Agent从技术到产品的架构设计与落地实践。</div>
+    <div class="src">来源：搜索补充 · 百格活动</div>
+  </div>
+  <div class="card-actions">
+    <button class="star-btn" onclick="toggleStar('act-c3a03ade')" title="关注">☆</button>
+    <button class="del-btn" onclick="deleteActivity('act-c3a03ade', 'Agentic AI Summit 超级智能体系统架构峰会·上海站')" title="删除">×</button>
+    <a class="ext-link" href="https://www.bagevent.com/eventlist.html?f=1" target="_blank">报名 →</a>
   </div>
 </div>
 </div>
